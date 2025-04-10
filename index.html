@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Getaway Trip Survey</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('https://mfiles.alphacoders.com/766/thumb-1920-766055.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #f0f0f0;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    form {
+      background-color: rgba(20, 20, 20, 0.7);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+      max-width: 600px;
+      width: 100%;
+      backdrop-filter: blur(6px);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ffffff;
+      font-size: 28px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      color: #e0e0e0;
+      font-weight: 500;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #555;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    ::placeholder {
+      color: #bbb;
+    }
+
+    @media (max-width: 480px) {
+      form {
+        padding: 20px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="overlay">
+    <form action="https://formsubmit.co/betocruz038@gmail.com" method="POST" aria-label="Getaway Trip Survey Form">
+      <h2>Getaway Trip Survey ✈️</h2>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="Name" placeholder="Your full name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="Email" placeholder="you@example.com" required>
+
+      <label for="destination">Where would you prefer to go? (Hover to discover destinations)</label>
+      <select id="destination" name="Travel Destination" required>
+        <option value="" disabled selected>Select your destination</option>
+        <option value="Portland">Portland, OR</option>
+        <option value="Seattle">Seattle</option>
+        <option value="San Diego">San Diego / Southern California</option>
+        <option value="Santa Cruz">Santa Cruz</option>
+        <option value="Florida">Somewhere in Florida</option>
+        <option value="Surprise me">Surprise me</option>
+      </select>
+
+      <label for="transport">Preferred method of transport:</label>
+      <textarea id="transport" name="Transport Method" rows="3" placeholder="Flight, road trip, teleportation, etc."></textarea>
+
+      <label for="foods">Foods you want to try (e.g., raw octopus, seafood):</label>
+      <textarea id="foods" name="Foods to Try" rows="3" placeholder="Let me know your cravings..."></textarea>
+
+      <label for="activities">What would you like to get into?</label>
+      <textarea id="activities" name="Activities" rows="4" placeholder="Be honest, we're not judging..."></textarea>
+
+      <!-- Hidden fields for redirect and disabling CAPTCHA -->
+      <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
+      <input type="hidden" name="_captcha" value="false">
+
+      <button type="submit" aria-label="Submit Getaway Survey">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
